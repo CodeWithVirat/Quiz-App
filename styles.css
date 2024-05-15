@@ -1,0 +1,163 @@
+#hint-container {
+    margin-top: 20px;
+    color: #28a745; /* Green color for hint text */
+    font-size: 16px;
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    background-color: rgba(40, 167, 69, 0.2); /* Light green background color */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    transition: opacity 0.3s ease; /* Add transition for smooth display */
+}
+
+#hint-container.hide {
+    opacity: 0; /* Hide hint container when hidden */
+    pointer-events: none; /* Disable pointer events when hidden */
+}
+
+#hint-container {
+    margin-top: 20px;
+    color: #28a745; /* Green color for hint text */
+    font-size: 16px;
+}
+
+#hint-container.hide {
+    display: none;
+}
+
+.logo-container {
+    position: relative;
+    width: 200px; /* Width of the logo container */
+    height: 200px; /* Height of the logo container */
+    overflow: hidden; /* Hide overflowing parts of the logo */
+    margin: 0 auto 20px; /* Adjust margin as needed */
+    border-radius: 50%; /* Ensure circular shape */
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo-container .logo {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center logo */
+    max-width: 100%; /* Ensure logo does not exceed container width */
+    max-height: 100%; /* Ensure logo does not exceed container height */
+    object-fit: contain; /* Ensure image fits container without distortion */
+    opacity: 0; /* Initially hide all logos */
+    transition: opacity 1s ease-in-out; /* Smooth transition for slideshow */
+}
+
+.logo-container .logo.active {
+    opacity: 1; /* Show active logo */
+}
+
+.logo {
+    display: block;
+    max-width: 100%; /* Ensure logo does not exceed container width */
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #007bff; /* Match the border color with your button color */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+.logo:hover {
+    border-color: #0056b3; /* Darker border color on hover */
+}
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff6b6b, #556270); /* Gradient background */
+    color: #fff; /* Text color */
+    transition: background 0.5s ease; /* Smooth transition for background color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background: #fff; /* White background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+    color: #007bff; /* Primary color for headings */
+    margin-bottom: 30px;
+}
+
+button, #options li, #hint-btn, #next-btn {
+    margin: 5px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Primary color for buttons */
+    color: #fff; /* Text color for buttons */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, #options li:hover, #hint-btn:hover, #next-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+#quiz {
+    background: #f8f9fa; /* Light background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+#quiz.hide {
+    transform: scale(0);
+}
+
+#timer {
+    margin-top: 20px;
+    color: #555; /* Timer text color */
+    font-size: 18px;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 24px;
+    color: #28a745; /* Success color for score */
+}
+
+#category-selection h2, #quiz h2, #result h2 {
+    color: #007bff; /* Primary color for headings */
+}
+
+.hide {
+    display: none;
+}
+
+.correct-answer {
+    background-color: #28a745 !important; /* Correct answer color */
+    color: #fff !important; /* Text color for correct answer */
+}
+
+.wrong-answer {
+    background-color: #dc3545 !important; /* Wrong answer color */
+    color: #fff !important; /* Text color for wrong answer */
+}
